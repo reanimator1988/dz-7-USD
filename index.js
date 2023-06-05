@@ -1,3 +1,5 @@
+"use strict";
+
 const USD = 40;
 for (let i = 10; i <= 100; i += 10) {
     const cost = i * USD;
@@ -20,14 +22,14 @@ console.log(isPrime(7));
 console.log(isPrime(12));
 
 function checkIfCanBePoweredBy3(n) {
-    if (n == 1) {
+    if (n === 1) {
         return true;
     }
     let x = 3;
     while (x < n) {
         x *= 3;
     }
-    return x == n;
+    return x === n;
 }
 console.log(checkIfCanBePoweredBy3(9));
 console.log(checkIfCanBePoweredBy3(81));
